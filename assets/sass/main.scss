@@ -100,7 +100,7 @@ pre code {
 }
 
 .navbar-brand, .jumbotron h1 {
-    color: $color5 !important;
+    color: $color5;
 }
 
 .jumbotron {
@@ -114,7 +114,7 @@ pre code {
 }
 
 .bg-dark, .jumbotron, #content > .row, section, article, .main-footer {
-    background-color: $color2 !important;
+    background-color: $color2;
 }
 
 .jumbotron {
@@ -213,4 +213,27 @@ article {
             margin: 0 4px;
         }
     }
+}
+
+@media (prefers-color-scheme: light) {
+  body, .jumbotron, #content > .row, section, article, .main-footer {
+    background: white;
+    color: #181818;
+  }
+
+  .jumbotron h1 {
+      color: #889116;
+  }
+
+  a {
+      color: #03a0c4;
+
+      &:hover {
+          color: #1b7a91;
+      }
+  }
+
+  .article-meta {
+      color: #686868;
+  }
 }
