@@ -1,5 +1,5 @@
 ---
-title: SparrowCI pipelines for everything
+title: "Day 1: SparrowCI pipelines for everything"
 date: 2022-12-01
 categories: [2022, Automation, Continuous integration, Pipeline, DevOps]
 tags: [CI/CD, SparrowCI, Automation, Continuous Integration, Pipeline, GitHub, DevOps]

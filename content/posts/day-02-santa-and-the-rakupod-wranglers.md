@@ -1,5 +1,5 @@
 ---
-title: Santa and the Rakupod Wranglers
+title: "Day 2: Santa and the Rakupod Wranglers"
 date: 2022-12-02
 categories: [2022, POD6, Document Conversion]
 tags: [POD6, Markdown, PDF, Convert, Text, HTML]
