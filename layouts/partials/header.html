@@ -1,0 +1,11 @@
+<header class="page-header">
+    <header class="jumbotron">
+        <h1>
+            <a href="/">
+                <img class="logo" src="/assets/img/camelia-small-santa.png" alt="Camelia Logo">
+            </a>
+            {{ with .Site.Title }}{{.}}{{ end }}
+        </h1>
+        {{ with .Site.Params.description }}<p class="lead">{{.}}</p>{{ end }}
+    </header>
+</header>

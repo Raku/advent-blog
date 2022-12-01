@@ -1,0 +1,23 @@
+title: Raku Advent Calendar
+params:
+  description: Raku is a multi-paradigm language where there's more than one way to do it
+disablePathToLower: true
+paginate: 15
+permalinks:
+  posts: /:section/:year/:month/:day/:filename/
+taxonomies:
+  category: categories
+  tag: tags
+  author: authors
+markup:
+  goldmark:
+    extensions:
+      typographer: false
+    parser:
+      attribute:
+        block: true
+    # renderer:
+    #   unsafe: true
+  highlight:
+    style: doom-one
+    anchorLineNos: true

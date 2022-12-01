@@ -1,0 +1,8 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+{{ .Site.GetPage "section" "posts" | partial "article-list.html" }}
+{{ end }}

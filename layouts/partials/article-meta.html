@@ -1,0 +1,30 @@
+<div class="article-meta">
+    {{ $authors := .GetTerms "authors" }}
+    {{ if $authors }}
+    <span class="article-author">
+        {{ range $index, $author := $authors }}
+        by <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+        {{ if lt $index (sub (len $authors) 1) }},{{ end }}
+        {{ end }}
+    </span>
+    {{ end }}
+    {{ with .Date }}
+    • <time datetime="{{.Format "2006-01-02"}}">{{.Format "Jan 2, 2006"}}</time>
+    {{ end }}
+    {{ $categories := .GetTerms "categories" }}
+    {{ if $categories }}
+    • Category:
+    {{ range $index, $category := $categories }}
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ if lt $index (sub (len $categories) 1) }},{{ end }}
+    {{ end }}
+    {{ end }}
+    {{ $tags := .GetTerms "tags" }}
+    {{ if $tags }}
+    • Tag:
+    {{ range $index, $tag := $tags }}
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ if lt $index (sub (len $tags) 1) }},{{ end }}
+    {{ end }}
+    {{ end }}
+</div>
